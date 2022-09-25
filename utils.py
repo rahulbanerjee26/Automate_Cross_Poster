@@ -74,7 +74,7 @@ def replaceCodeSnippetsWithGists(
                     embedGist[blg](gists[counter]),
                 )
                 counter += 1
-        newFileName = f"{blg}_gist+{title}"
+        newFileName = f"{blg}_gist"
         with open(newFileName, "w+") as f:
             f.write(new_content)
             print("Saved file with gists for ", blg)
